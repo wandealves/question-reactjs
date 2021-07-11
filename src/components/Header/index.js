@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <>
@@ -7,13 +9,13 @@ function Header() {
           <nav>
             <ul className="flex text-white text-center">
               <li className="m-4 p-2 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:bg-blue-300 focus:ring-opacity-50">
-                <a href="/">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="m-4 p-2 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:bg-blue-300 focus:ring-opacity-50">
-                <a href="/">Configurações</a>
+                <Link to="/configurations">Configurações</Link>
               </li>
               <li className="m-4 p-2 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:bg-blue-300 focus:ring-opacity-50">
-                <a href="/">Questões</a>
+                <Link to="/questions">Questões</Link>
               </li>
               <li className="m-4 p-2 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:bg-blue-300 focus:ring-opacity-50">
                 <a href="/">Nova</a>
